@@ -4,3 +4,9 @@ def create():
         "job": "leader"
     }
 
+
+def register_uns():
+    return {
+        "email": "sydney@fife"
+    }
+
