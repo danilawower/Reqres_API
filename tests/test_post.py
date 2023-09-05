@@ -1,7 +1,7 @@
-
 from api.api import Post
-from api.models import create
-from schemas.post import create_schema
+from api.models import create, register_uns
+from schemas.post import create_schema, register_uns_schema
+
 
 URL = "https://reqres.in/"
 
@@ -13,6 +13,10 @@ class TestPost:
         assert response.status_code == 201
         assert response.json().get('id')
 
+    def test_register_uns(self):
+        body = register_uns()
+        response = Post(url=URL).register_uns(body=body, schema=register_uns_schema)
+        assert response.status_code == 400
 
 
 
