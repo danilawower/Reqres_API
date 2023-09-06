@@ -40,3 +40,11 @@ class Get:
         logger.info(response.text)
         return response
 
+
+    GET_SINGLE_USER_NOT_FOUND = "api/users/23"
+
+    def single_user_not_found(self, schema: dict):
+        response = requests.get(f'{self.url}{self.GET_SINGLE_USER_NOT_FOUND}')
+        validate(instance=response.json(), schema=schema)
+        logger.info(response.text)
+        return response

@@ -30,3 +30,5 @@ single_user_schema = {
     "support"
   ]
 }
+
+single_user_not_found_schema = {}
