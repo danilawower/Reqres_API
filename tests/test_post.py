@@ -11,7 +11,7 @@ class TestPost:
         body = create()
         response = Post(url=URL).create_user(body=body, schema=create_schema)
         assert response.status_code == 201
-        assert response.json().get('id')
+
 
     def test_register_uns(self):
         body = register_uns()

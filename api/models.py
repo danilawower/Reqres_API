@@ -11,3 +11,8 @@ def register_uns():
     }
 
 
+def update():
+    return {
+        "name": "morpheus",
+        "job": "zion resident"
+    }
