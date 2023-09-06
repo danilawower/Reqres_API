@@ -61,3 +61,14 @@ class Put:
         logger.info(response.text)
         return response
 
+
+class Delete:
+
+    def __init__(self, url):
+        self.url = url
+
+    DELETE = "api/users/2"
+
+    def delete(self):
+        response = requests.delete(f'{self.url}{self.DELETE}')
+        return response
