@@ -1,1 +1,1 @@
-Автоматизация https://reqres.in/ API
+Тестовое задание. Автоматизация https://reqres.in/ API.
