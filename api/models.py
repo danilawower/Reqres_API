@@ -16,3 +16,10 @@ def update():
         "name": "morpheus",
         "job": "zion resident"
     }
+
+
+def register():
+    return {
+        "email": "eve.holt@reqres.in",
+        "password": "pistol"
+    }

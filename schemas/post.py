@@ -16,3 +16,13 @@ register_uns_schema = {
     },
     "required": ["error"]
 }
+
+
+register_schema = {
+    "type": "object",
+    "properties": {
+        "id": {"type": "integer"},
+        "token": {"type": "string"}
+    },
+    "required": ["id", "token"]
+}

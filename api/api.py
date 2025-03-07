@@ -17,13 +17,14 @@ class Post:
         logger.info(response.text)
         return response
 
-    POST_REGISTER_UNS = "api/register"
+    POST_REGISTER = "api/register"
 
-    def register_uns(self, body: dict, schema: dict):
-        response = requests.post(f'{self.url}{self.POST_REGISTER_UNS}', json=body)
+    def register(self, body: dict, schema: dict):
+        response = requests.post(f'{self.url}{self.POST_REGISTER}', json=body)
         validate(instance=response.json(), schema=schema)
         logger.info(response.text)
         return response
+
 
 
 class Get:
