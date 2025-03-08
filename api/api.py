@@ -55,6 +55,22 @@ class Get:
         logger.info(response.text)
         return response
 
+    GET_LIST_USERS = "api/users?page=2"
+
+    def list_users(self, schema: dict):
+        response = requests.get(f'{self.url}{self.GET_LIST_USERS}')
+        validate(instance=response.json(), schema=schema)
+        logger.info(response.text)
+        return response
+
+    GET_LIST = "api/unknown"
+
+    def list(self, schema: dict):
+        response = requests.get(f'{self.url}{self.GET_LIST}')
+        validate(instance=response.json(), schema=schema)
+        logger.info(response.text)
+        return response
+
 
 class Put:
 
