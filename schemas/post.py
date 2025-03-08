@@ -26,3 +26,14 @@ register_schema = {
     },
     "required": ["id", "token"]
 }
+
+
+login_schema = {
+    "type": "object",
+    "properties": {
+        "token": {"type": "string"}
+    },
+    "required": ["token"]
+}
+
+

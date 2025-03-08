@@ -23,3 +23,10 @@ def register():
         "email": "eve.holt@reqres.in",
         "password": "pistol"
     }
+
+
+def login():
+    return {
+        "email": "eve.holt@reqres.in",
+        "password": "cityslicka"
+    }

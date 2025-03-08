@@ -25,6 +25,14 @@ class Post:
         logger.info(response.text)
         return response
 
+    POST_LOGIN = "api/login"
+
+    def login(self, body: dict, schema: dict):
+        response = requests.post(f'{self.url}{self.POST_LOGIN}', json=body)
+        validate(instance=response.json(), schema=schema)
+        logger.info(response.text)
+        return response
+
 
 
 class Get:
