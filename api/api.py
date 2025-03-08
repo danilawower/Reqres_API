@@ -34,7 +34,6 @@ class Post:
         return response
 
 
-
 class Get:
 
     def __init__(self, url):

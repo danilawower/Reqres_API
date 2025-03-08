@@ -30,3 +30,9 @@ def login():
         "email": "eve.holt@reqres.in",
         "password": "cityslicka"
     }
+
+
+def login_uns():
+    return {
+        "email": "peter@klaven"
+    }

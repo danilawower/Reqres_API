@@ -36,4 +36,10 @@ login_schema = {
     "required": ["token"]
 }
 
-
+login_uns_schema = {
+    "type": "object",
+    "properties": {
+        "error": {"type": "string"}
+    },
+    "required": ["error"]
+}
